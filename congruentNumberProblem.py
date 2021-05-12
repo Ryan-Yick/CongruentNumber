@@ -19,7 +19,7 @@ def isCongruent(n):
         else:
             return "Not Congruent"
 
-def isSquareFree(n):
+def isSquareFree(n): #checks if all squares less than n can divide n
     for i in range(2, int(math.sqrt(n))+ 1):
         if (n % i**2) == 0:
             return False
